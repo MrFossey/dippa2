@@ -1,14 +1,3 @@
-% Lines starting with a percent sign (%) are comments. LaTeX will
-% not process those lines. Similarly, everything after a percent
-% sign in a line is considered a comment. To produce a percent sign
-% in the output, write \% (backslash followed by the percent sign).
-% ==================================================================
-% Usage instructions:
-% ------------------------------------------------------------------
-% The file is heavily commented so that you know what the various
-% commands do. Feel free to remove any comments you don't need from
-% your own copy. When redistributing the example thesis file, please
-% retain all the comments for the benefit of other thesis writers! 
 % ==================================================================
 % Compilation instructions:
 % ------------------------------------------------------------------
@@ -272,14 +261,12 @@
 % variants you use (they are all there in the same place).
 % ------------------------------------------------------------------
 \newcommand{\TITLE}{IT CAN FELL ROCKETS}
-\newcommand{\FTITLE}{TODO}
-\newcommand{\STITLE}{TODO} % remove lifecycle power solutions supplier
-\newcommand{\SUBTITLE}{or developing a framework for continuous integration testing in a lifecycle power solutions supplier}
-\newcommand{\FSUBTITLE}{TODO}
-\newcommand{\SSUBTITLE}{TODO}
-\newcommand{\DATE}{January 18, 2013}
-\newcommand{\FDATE}{18. tammikuuta 2013}
-\newcommand{\SDATE}{Den 18 Januari 2013}
+\newcommand{\FTITLE}{Automatisoitu kehys integraatioiden regressiotestaukseen}
+\newcommand{\SUBTITLE}{or developing a framework for continuous integration testing at a lifecycle power solutions supplier}
+\newcommand{\FSUBTITLE}{}
+\newcommand{\DATE}{August 12, 2013}
+\newcommand{\FDATE}{12. elokuuta 2013} % Todo
+\newcommand{\SDATE}{Den 12 augusti 2013}
 
 % Supervisors and instructors
 % ------------------------------------------------------------------
@@ -294,13 +281,14 @@
 %\newcommand{\SSUPERVISOR}{Professor Antti Ylä-Jääski}
 % Example of twosupervisors:
 \newcommand{\SUPERVISOR}{Professor Riitta Smeds}
-\newcommand{\FSUPERVISOR}{Professor Riitta Smeds}
+\newcommand{\FSUPERVISOR}{Professori Riitta Smeds}
 \newcommand{\SSUPERVISOR}{Professor Riitta Smeds}
 
 % If you have only one instructor, just write one name here
-\newcommand{\INSTRUCTOR}{Eero Tuomikoski M.Sc. (Tech.)}
-\newcommand{\FINSTRUCTOR}{Diplomi-insinööri Eero Tuomikoski}
-\newcommand{\SINSTRUCTOR}{Diplomingenjör Eero Tuomikoski}
+\newcommand{\INSTRUCTOR}{Eero Tuomikoski M.Sc. (Tech.)\\ Inka Vilpola D.Sc. (Tech.)}
+\newcommand{\FINSTRUCTOR}{Diplomi-insinööri Eero Tuomikoski\\ Tekniikan tohtori Inka Vilpola}
+\newcommand{\SINSTRUCTOR}{Diplomingenjör Eero Tuomikoski\\ Doktor Inka Vilpola}}
+
 % If you have two instructors, separate them with \\ to create linefeeds
 % \newcommand{\INSTRUCTOR}{Olli Ohjaaja M.Sc. (Tech.)\\
 %  Elli Opas M.Sc. (Tech)}
@@ -320,18 +308,18 @@
 %  Elli Opas M.Sc. (Tech), Aalto SCI}
 
 
-% Other stuff
+% Other stuff todo
 % ------------------------------------------------------------------
-\newcommand{\PROFESSORSHIP}{Data Communication Software}
-\newcommand{\FPROFESSORSHIP}{Tietoliikenneohjelmistot}
-\newcommand{\SPROFESSORSHIP}{Datakommunikationsprogram}
+\newcommand{\PROFESSORSHIP}{Business networks}
+\newcommand{\FPROFESSORSHIP}{Liiketoimintaverkostot}
+\newcommand{\SPROFESSORSHIP}{}
 % Professorship code is the same in all languages
-\newcommand{\PROFCODE}{T-110}
-\newcommand{\KEYWORDS}{integration testing, testing automation, testing framework, continuous integration}
-\newcommand{\FKEYWORDS}{ohjelmistotestaus, automatisoitu testaus, integraatiotestaus, testikehys, jatkuva testaus}
+\newcommand{\PROFCODE}{T-124}
+\newcommand{\KEYWORDS}{integration testing, testing automation, testing framework, continuous integration, software testing}
+\newcommand{\FKEYWORDS}{regressiotestaus, ohjelmistotestaus, automatisoitu testaus, integraatiotestaus, testikehys, jatkuva testaus}
 \newcommand{\SKEYWORDS}{testning}
 \newcommand{\LANGUAGE}{English}
-\newcommand{\FLANGUAGE}{Englanti}
+\newcommand{\FLANGUAGE}{englanti}
 \newcommand{\SLANGUAGE}{Engelska}
 
 % Author is the same for all languages
@@ -414,11 +402,12 @@
 % ------------------------------------------------------------------
 \thesisabstract{english}{
 
-Software integration is an assembly task where components have to be laid carefully for seamless interoperation. An ill-advised change in either the integrations, or inside the systems themselves, may potentially cause a discontinuity in operations. This master's thesis examines testing these cross-component and cross-system connections within a Finnish complete lifecycle power solutions supplier and sets out to define a practical\emph{modus operandi} for conducting automated integration testing.
+Software integration is an assembly task where components have to be laid carefully for seamless interoperation. One ill-advised change in either the integrations, or inside the systems themselves, might potentially cause a harmful discontinuity in operations. This master's thesis examines testing these cross-component and cross-system connections within a Finnish complete lifecycle power solutions supplier and sets out to define a practical\emph{modus operandi} for conducting automated integration testing.
 
-The thesis expounded on integration testing theory and fameworks. Testing solutions in academic literature were deconstructed and carefully analyzed and their best features observed. These practical insights were combined with theoretical findings and crystallized into a new integration testing framework, which was also tailored for case company needs. The resulting framework was then comprehensively evaluated through requirements analysis, heuristic appraisal, and qualitative validation by company experts. 
+The thesis expounded on integration testing theory and frameworks. Testing solutions in academic literature were deconstructed and carefully analyzed and their best features observed. These practical insights were combined with theoretical findings and crystallized into a new integration testing framework, which was also tailored for case company needs. The resulting framework was then comprehensively evaluated through requirements analysis, heuristic appraisal, and qualitative validation by company experts. 
 
-The framework construct successfully both describes testing process work flow and suggests technical implementation. In practice, the implementation brings organization to a previously ad hoc process thereby managing business risk. In theory, it extends the popular notion that integration testing is a mere transitional period in development and examines testing as a continuous process all the way from the strategic level to the mundane. The result is a cohesive narrative and guide to implementing automated integration testing.
+The framework construct successfully both describes testing process work flow and suggests technical implementation. In practice, the implementation brings organization to a previously ad hoc process thereby mitigating business risk. In theory, it extends the popular notion that integration testing is a mere transitional period in development and examines testing as a continuous process all the way from the strategic level to the mundane. The result is a cohesive narrative and guide to implementing automated integration testing.
+
 }
 
 % Abstract in Finnish
@@ -428,7 +417,7 @@ Ohjelmistot rakentuvat useiden komponenttien ja järjestelmien yhteistoiminnasta
 
 Tutkimus pureutui ohjelmistotestausmalleihin ja -teorioihin ja se suoritettiin suomalaisen konepajayhtiön tilauksesta. Se tarkasteli aikaisemman akateemisen tutkimuksen testikehyksiä ja perusteellisesti selvitti mistä osista nämä koostuvat. Näistä käytännön ja testausteorian havainnosta rakennettiin uusi testikehys, joka myös perustui kohdeyrityksen vaatimuksiin. Kehyshypoteesia arvioitiin huolellisesti testauksen vaatimusten, ohjelmistokehyksien heuristiikkojen ja asiantuntijalausuntojen avulla.
 
-Työn tuloksena on suositus testikehyksen työnkululle ja prosesseille, sekä kehyksen käytännön toteutukselle. Uusi kehys käntää testauksen satunnaisesta hallituksi ja järjetelmällisäksi prosessiksi parantaen samalla liiketoimintariskien hallintaa. Kehyksen tausta-ajatuksena on myös haastaa yleinen käsitys siitä, että integraatiotestaus on pelkkä ohjelmistokehityksen välivaihe. Se tarkasteleekin testausta jatkuvana prosessina ja aina strategiselta tasolta päivittäiseen ja komponenttitasoon. Tutkimuksen kaari muodostaa ehyen kertomuksen ja käsikirjan automatisoidun integraationtestauksen toteuttamisesta.
+Työn tuloksena on suositus testikehyksen työnkululle ja prosesseille, sekä kehyksen käytännön toteutukselle. Uusi kehys kääntää testauksen satunnaisesta hallituksi ja järjestelmälliseksi prosessiksi parantaen samalla liiketoimintariskien hallintaa. Kehyksen tausta-ajatuksena on myös haastaa yleinen käsitys siitä, että integraatiotestaus on pelkkä ohjelmistokehityksen välivaihe. Se tarkasteleekin testausta jatkuvana prosessina aina strategiselta tasolta päivittäiseen ja komponenttitasoon. Tutkimuksen kaari muodostaa ehyen kertomuksen ja käsikirjan automatisoidun integraationtestauksen toteuttamisesta.
 
 }
 
@@ -447,7 +436,7 @@ Työn tuloksena on suositus testikehyksen työnkululle ja prosesseille, sekä ke
 
 Making this thesis has been a fun and wholly rewarding exploration of the murky waters around organizatorial regression testing. Throughout the researching and writing I was helped by many who deserve my sincere gratitude. I wish to thank Wärtsilä's technical experts for their advice and enthusiasm in the project, my friends and peers for their useful suggestions and feedback, my thesis supervisor for her open-minded, but grounded encouragement, and finally, and in particular, my instructors for their enduring support.
 
-Thank you, and remember to test often, and test early.
+Thank you, and remember --- test often, and test early.
 \vskip 10mm
 
 \noindent Helsinki, \DATE
@@ -477,72 +466,69 @@ Black-box testing & A testing strategy that considers a functional design specif
 
 Bug & See \emph{defect}. \\[0.3cm]
 
-Capture and playback & See \emph{record and playback} \\[0.3cm]
+Capture and playback & See \emph{record and playback} \\[0.8cm]
 
-Component testing & Testing a collection of units which form a single component or module, or testing component-based systems. todo wu chen \\[0.3cm]
+Component testing & Testing a collection of units which together form a single component or module, or testing component-based systems in general. \citep{wu2003uml, ieee2010systems} \\[0.3cm]
 
-Continuous integration & A development practice where team members integrate their work frequently and each integration is verified by an automated build which include tests to detect flaws as quickly as possible. \citep{duvall2007continuous} \\[0.3cm]
+Continuous integration & A development practice where team members integrate their work frequently and each integration is verified by an automated build which include tests to detect flaws as quickly as possible. \citep{fowler2006continuous} \\[0.3cm]
 
-Defect & A flaw in the system or component that causes it to fail to perform its function. \citep{burnstein2003practical} \\[0.3cm]
+Defect & A flaw in the system or component that causes it to fail to perform its function. \citep{burnstein2003practical, ieee2010systems} \\[0.3cm]
 
-ESB & \textbf{E}nterprise \textbf{S}ervice \textbf{B}us. A  \\[0.3cm]
+ESB & \textbf{E}nterprise \textbf{S}ervice \textbf{B}us. \emph{"An Enterprise Service Bus is an open standards, messagebased, distributed integration infrastructure that provides routing, invocation and mediation services to facilitate the interactions of disparate distributed applications and services in a secure and reliable manner."} \citep{menge2007enterprise} \\[0.3cm]
 
-Failure & The state or condition of failing to meet expectations or objectives. \\[0.3cm] % todo 
+Failure & The state or event of failing to meet specified expectations or objectives. \citep{ieee2010systems} \\[0.3cm]
 
-Fault & An abnormal condition or defect at the component, equipment, or sub-system level which may lead to a \emph{failure}. ISO/CD 10303-226 \\[0.3cm]
+Fault & A defect in the software which may lead to a \emph{failure}. \citep{ieee2010systems} \\[0.3cm] 
 
-Fault-based testing & Using information about previous failures to design system specifications and test cases. Also: purposely inserting faults into the system and then measuring the effectiveness of the test suite in finding them. \citep{pezze2008software} \\[0.3cm] 
+Fault-based testing & Using information about previous failures to design system specifications and test cases. Also: purposely inserting faults into the system and then measuring the effectiveness of the test suite in finding them. \citep{pezze2008software} \\[0.3cm]  
 
-Framework & An abstract design which can be extended by adding more or better components to it. An important characteristic of a framework that differentiates it from libraries is that the methods defined by the user to tailor the framework are called from within the framework itself. The framework often plays the role of the main program in coordinating and sequencing application activity. \citep{johnson1988designing} \\[0.3cm]
+Framework & An abstract design which can be extended by adding more or better components to it. Unlike libraries, the framework often plays the role of the main program in coordinating and sequencing application activity. \citep{laukkanen2006data, ieee2010systems}  \\[0.3cm]
 
-Functional testing &  \\[0.3cm]
+Functional testing & \emph{Black-box testing} conducted to evaluate the compliance of a system or component with specified functional requirements. \citep{ieee2010systems} \\[0.3cm] 
 
 Integration testing & An orderly progression of testing where individual software and hardware elements are combined and tested until entire the system has been integrated. \citep{burnstein2003practical} Testing in which \emph{"software components, hardware components, or both are combined and tested to evaluate the interaction among them"} \citep{ieee2010systems} A level of test undertaken to validate the interface between internal components of a system. Typically based upon the system architecture. \citep{craig2002systematic} \\[0.3cm]
 
-Library & A controlled collection of software and related documentation designed to aid in software development, use, or maintenance. See also \emph{framework}. \citep{ieee1990} \\[0.3cm]
+Library & \emph{"A controlled collection of software and related documentation designed to aid in software development, use, or maintenance."} See also \emph{framework}. \citep{ieee2010systems} \\[0.3cm]
 
-Model-based testing & A testing approach where test cases are automatically derived from architectural and behavioural models and specifications. \\[0.3cm] % todo 
+Model-based testing & A testing approach where test cases are automatically derived from architectural and behavioural models and specifications. \citep{apfelbaum1997model} \\[0.3cm]
 
-Mock service & def \\[0.3cm]
+Mock service & A simulated software component simulating a one function or service. May have been constructed through \emph{record and replay} or a \emph{surrogate engine}. \\[0.3cm]
 
-Non-functional testing & def \\[0.3cm]
+Non-functional testing & Testing non-functional qualities of software, e.g. usability, performance, conformity, security, etc. Non-functional requirements specify not what the software will do but how the software will do it. \citep{ieee2010systems} \\[0.3cm]
 
-Record and playback & An approach where a test tool records test input and outcomes and provides facilities for subsequent re-execution or replay of the test. \citep{burnstein2003practical} \\[0.3cm]
+Record and playback & An approach where a test tool records test input and outcomes and provides facilities for subsequent re-execution or replay of the test. \citep{burnstein2003practical, ieee2010systems} \\[0.3cm]
 
-Regression testing & Retesting software that has been modified to ensure that no defects have been introduced by the modification and that the software still satisfies its specification. \citep{burnstein2003practical} \\[0.3cm]
+Regression testing & Selective re-execution of tests on software that has been modified to ensure that no defects have been introduced by the modification and that the software still satisfies its specification. \citep{burnstein2003practical, ieee2010systems} \\[0.3cm]
 
-Retesting & def \\[0.3cm]
+Retesting & The re-execution of tests in order to verify that a defect has been correctly fixed. \citep{jenkins2008software} \\[0.3cm]
 
-SOA & \textbf{S}ervice-\textbf{O}riented \textbf{A}rchitecture. A software architecutre principle where \\[0.3cm]
+SOA & \textbf{S}ervice-\textbf{O}riented \textbf{A}rchitecture. A software architecture design pattern based on structured collections of discrete software modules, or services, which together provide the full functionality of a large software application. \citep{velte2009cloud} \\[0.3cm]
 
-Aurrogate & def \\[0.3cm]
+Surrogate or surrogate engine & A simulation apparatus that is capable of creating and running surrogate components which simulate unavailable system services or components. See also \emph{mock service}. \\[0.3cm]
 
-System testing & process of testing an integration hardward and softwre ststem to very that the system meets ists specified requirements \\[0.3cm]
+Stub & A simulation of a particular sub-component which can be used to simulate that component in a larger assembly. \citep{jenkins2008software} Program logic substituting for the body of a software component that is or will be defined elsewhere. \citep{ieee2010systems} \\[0.3cm]
 
-SUT & \textbf{S}ystem \textbf{U}nder \textbf{T}est. The entire system or product to be tested. \citep{craig2002systematic} \\[0.3cm]
+System testing & \emph{"The process of testing an integrated hardware and software system to verify that the system meets its specified requirements."} \citep{burnstein2003practical} \\[0.3cm]
 
-Test automation framework & A framework used for test automation. Provides some core functionality (e.g. logging and reporting) and allows its testing capabilities to be extended by adding new test libraries. \\[0.3cm]
+SUT & \textbf{S}ystem \textbf{U}nder \textbf{T}est. The entire system or product that is tested. \citep{craig2002systematic} \\[0.3cm]
 
-Test case & Test related item which contains test inputs, execution conditions, and expected outputs. \citep{burnstein2003practical} \\[0.3cm]
+Test case & A test-related item which contains test inputs, execution conditions, and expected outputs. \citep{burnstein2003practical, ieee2010systems} \\[0.3cm]
 
-Testing framework & def \\[0.3cm]
+Test framework & A \emph{framework} used for testing. \\[0.3cm]
 
-Test oracle & def \\[0.3cm] 
+Test harness & A configuration of surrogate components which substituting for parts of the deployment environment. \citep{pezze2008software} \\[0.3cm]
 
-Unit testing & Aggregate of technical activities involved in demonstrating that an individual software unit has been implemented correctly and that the code and the design of a unit are consistent and that the unit design is correct. \citep{burnstein2003practical} (pezze) \\[0.3cm]
+Test oracle & A piece of software which applies pass and fail criterion to a program execution. \citep{pezze2008software}. \\[0.3cm] 
 
-UTF & \textbf{U}nified \textbf{T}esting \textbf{F}ramework. Def \\[0.3cm]
+Unit testing & The \emph{"aggregate of technical activities involved in demonstrating that an individual software unit has been implemented correctly, and that the code and the design of a unit are consistent, and that the unit design is correct."} \citep{burnstein2003practical} \\[0.3cm]
 
-Validation & The process of evaluating a software system or coponent during or at the end of the development cycle to evalut wheter it meets the customers requirments \\[0.3cm]
+Validation & The process of evaluating a software system or component during or at the end of the development phase to evaluate whether it meets the customer requirements. \citep{ieee2010systems} \\[0.3cm]
 
-Verification & The process of evaluating a software system or component to determine whetjher the products of a given development phase satisfy the conditions composed at the star that phase \citep{pezze2008software} \\[0.3cm]
+Verification & \emph{"The process of evaluating a software system or component to determine whether the products of a given development phase satisfy the conditions composed at the start that phase."} \citep{ieee2010systems} \\[0.3cm]
 
-White-box testing & Testing strategy that requires knowledge of the internal structure of a program to design test cases \citep{pezze2008software} \\[0.3cm]
+White-box testing & A testing strategy that requires knowledge of the internal structure of a program to design test cases \citep{burnstein2003practical} \\[0.3cm]
 
-WSDL & \textbf{W}eb \textbf{S}ervice \textbf{D}escription \textbf{L}anguage. Aan XML-based definition of a web service interface. \\[0.3cm]
-
-% e.g.& for example (do not list here this kind of common acronymbs or abbreviations, but only those that are essential for understanding the content of your thesis. \\
-% note & Note also, that this list is not compulsory, and should be omitted if you have only few abbreviations
+WSDL & \textbf{W}eb \textbf{S}ervice \textbf{D}escription \textbf{L}anguage. An XML-based language defining web service interfaces. \citep{christensen2001web} \\[0.3cm]
 
 \end{longtable}
 
@@ -591,7 +577,6 @@ WSDL & \textbf{W}eb \textbf{S}ervice \textbf{D}escription \textbf{L}anguage. Aan
 \chapter{Introduction}
 \label{chapter:introduction}
 % Keywords: system-to-system integration (testing), automated testing, testing framework, integration testing
-% mega todo: the testing process now DONE, evaluation through comparison to requirements DONE, framework comparison excel, pitfalls integration, fill the empty part 4.3, 
 
 % there exists process for general test design, prioritizing, planning, identifying test data, the framework focuses on test execution and making testing technically possible, testing policy, communication, environment, test suite and maintenance, practical process for test execution, reporting
 
@@ -603,36 +588,34 @@ WSDL & \textbf{W}eb \textbf{S}ervice \textbf{D}escription \textbf{L}anguage. Aan
 \end{adjustwidth}
 \vspace{8 mm}
 
-% todo into some greater whole
-At the confluence of cognition lies danger --- but also great potential. Integrating disparate tasks to achieve one complex end result embodies the same principles as the division of labor. Complex problems are easier to solve when divided, each part administered by a dedicated expert; cooperation fosters growth.
+At the confluence of cognition lies danger --- but also great potential. Integrating disparate tasks to achieve one complex end result greater than the sum of its parts embodies the same principles as the division of labor. Complex problems are easier to solve when divided, each part administered by a dedicated expert; cooperation fosters growth. 
 
-% tood add something about cost-savings because testing and maintenance account for most software costs, reid and myers
-Integrating information systems is common practice in organizations and corporations, too, and often a prerequisite for operational IT in the modern networked business landscape. Information, the very same information, must be available and at the disposal of multiple interconnected systems worldwide. At the same time, researchers like \citet{myers1976software} and \citet{reid1976} have estimated that testing and maintenance costs amount to over 50\% of total software costs, compelling to organize testing cost-effectively.
+Integrating information systems is common practice in organizations and corporations, too, and often a prerequisite for operational IT in the modern networked business landscape. Information, the very same information, must be available and at the disposal of multiple interconnected systems worldwide. At the same time, researchers like \citet{myers1976software} and \citet{reid2005art} have estimated that testing and maintenance costs amount to over 50\% of total software costs, compelling to organize testing cost-effectively.
 
 The sporadically distributed systems do have many advantages. They bear the brunt of clerical work and and handle transactional communication with mathematical precision. They enable incremental growth, either through conscious extension of services or a less conscious natural evolution and accretion of new services. Other benefits of an interdependent and connected information technology system include a reduction in the number of systems related upkeep, maintenance, and development costs. Shared resources bring economies of scale as software components find reuse. \citep{rehman2007testing} Having fewer systems also reduces the degree of complexity in the organisatorial IT set-up.
 
 \begin{comment}
 % benefits of automation, build-up to integration, orienting to automoated IT business processes
-% TODO start with key concept, not automation, real-time processes perspective, inter-company, information flow as a % reason, add picture and figure, why was the work conducted? business critical and dependencies. why?
+%start with key concept, not automation, real-time processes perspective, inter-company, information flow as a % reason, add picture and figure, why was the work conducted? business critical and dependencies. why?
 Automation is one of the great boons brought on by technological development on one hand freeing up resources like labour for more value-adding purposes --- and permitting the execution of uniform, repeatable processes and process control on the other. The pinnacle of advancement and prosperity on which society stands today is based on a continuous flow of various automated tasks and electronic services, many of which are complex and involve a slew of actors or agents. Work is divided and its completion therefore requires cooperation between service systems.
 \end{comment}
 
-However, integration efforts may result in unclear responsibilities and difficulties in determining if the systems cooperate and behave correctly, and if any use cases are unaccounted for. In a distributed system there are more component dependencies and connections that can fail. Relinquishing control over units always carries risk that they'll be ill-managed by someone who has misunderstood priorities or ambitions. Typically integrations are tested after the developer passes the unit-tested software on to the tester or end user and not always do the two sides see eye to eye. A high number of interdependent integrations makes the task even more daunting since a single change in the system components can disrupt a whole chain of operations and the integration house of cards comes tumbling down as was the case with the Ariane 5 rocket.
+However, integration efforts may result in unclear responsibilities and difficulties in determining if the systems cooperate and behave correctly, and if any use cases are unaccounted for. In a distributed system there are more component dependencies and connections that can fail. Relinquishing control over units always carries risk that they'll be ill-managed by someone who has misunderstood priorities or ambitions. Typically integrations are tested after the developer passes the unit-tested software on to the tester or end user and not always do the two sides see eye to eye. A high number of interdependent integrations makes the task even more daunting since a single change in the system components can disrupt a whole chain of operations and the integration house of cards comes tumbling down as was the case with the Ariane 5 rocket \citep{pezze2008software, rehman2007testing}.
 
 % business motivation and technical considerations
-The benefits outweighing all shortcomings, modern corporations' business processes rely on automated IT and operate on distributed systems and networked devices. But the problems are still there. Therefore, ensuring quality of service is essential. Systematic, rigorous, and preferably automated regression testing, both functional and non-functional, is needed to maintain a requisite degree of confidence in the performance and serviceability of information systems. This thesis examines the requirements of system-to-system integration testing both in a theoretical and a real world business setting, constructs a testing paradigm to mediate over integration issues, and tries it out in practice. The supposition is that a carefully crafted framework will help uncover defects and issues earlier and more efficiently, and help resolve them with fewer resources.
+The benefits outweighing all shortcomings, modern corporations' business processes rely on automated IT and operate on distributed systems and networked devices. But the problems are still there. Therefore, ensuring quality of service is essential. Systematic, rigorous, and preferably automated regression testing, both functional and non-functional, is needed to maintain a requisite degree of confidence in the performance and serviceability of information systems. Indeed, \citet{rehman2007testing} call it an \emph{"indispensible testing phase"}. This thesis examines the requirements of system-to-system integration testing both in a theoretical and a real world business setting, constructs a testing paradigm to mediate over integration issues, and tries it out in practice. The supposition is that a carefully crafted framework will help uncover defects and issues earlier and more efficiently, and help resolve them with fewer resources.
 
-% todo narrow down to wärtsilä's problem in sentence "This thesis...
-Wärtsilä's IT systems are mediated over a central hub, the enterprise service bus. Messages traveling between two systems go through integration moduels and procedures built around the bus. Since new services and systems are constantly being introduced and old ones updated, there exists a continuing need for retesting the system integrations. Even if the applications change, everything must continue to work together smoothly. %Define it for savings and communicate to external stakeholders.
 
-% As with sentient minds, there is great chance of misapprehension when two cognitions clash. mediate with framework
+This thesis studies system integration testing at a Finnish complete lifecycle power solutions supplier Wärtsilä. Wärtsilä's IT systems are mediated over a central hub, the enterprise service bus. Messages traveling between two systems go through integration moduels and procedures built around the bus. Since new services and systems are constantly being introduced and old ones updated, there exists a continuing need for retesting the system integrations. Even if the applications change only a little, there exists a significant risk that something has broken \citep{pezze2008software}. 
+%Define it for savings and communicate to external stakeholders.
+
 % since executed by a push of a button, human dimension not needed. however: application responsibilities and installation and configuration, creating new test cases, framework requires support. normally process chart has actors on y column, here difficult to plot. mapping tasks to people left out of scope (test planner, test) 
 
 \section{Research questions}
 
-The overall purpose of the study is to devise a testing framework for automated integration tests. Here, \emph{'framework'} refers to both the structure and configuration of the technical testing solution, as well as the process structure. This is then subjected to qualitative evaluation in a workshop at Wärtsilä after which a revised version of it is presented. A prototype is created in the vein of constructive research to help evaluate the framework applicability.
+The overall purpose of the study is to devise a testing framework for automated integration tests. Here, \emph{'framework'} refers to both the structure and configuration of the technical testing solution, as well as the process structure. This is then subjected to qualitative evaluation in a workshop at the case company after which a revised version of it is presented. A prototype is created in the vein of constructive research to help evaluate the framework applicability.
 
-Testing involves many managerial aspects, tasks, and responsibilities navigating the maze of stakeholders and scheduling manual work. This thesis only examines the technical process requirements of automated integration testing and the manual work needed to maintain it. It is a manual on the process of \emph{how to build a sword, not how to wield it}.
+Testing involves many managerial aspects, tasks, and responsibilities navigating the maze of stakeholders and scheduling manual work. This thesis only examines the technical process requirements of automated integration testing and the manual work needed to maintain it. It is a manual on the process of how to build a framework and will only expand on the framework's implemenation from a technical point of view.
 
 The research problem can be divided into two questions: \\
 
@@ -643,7 +626,6 @@ The research problem can be divided into two questions: \\
 
 The first research question addresses the pertinent subquestions: what is a framework and how should integration testing be conducted? Based on academic literature, the integration testing framework is modeled and its constituent processes are described, which also serves as a foundation for answering the second research question.
 
-% todo check way wärtsilä is referred to
 The first part then proceeds to requirements analysis and uncovering the criteria for a suitable framework structure. These requirements are based on Wärtsilä's operational IT environment as well as generic observations made earlier in the study. Wärtsilä's system environment and electronic business processes and integrations are a canonical example of corporate IT and as such should lend themselves well to comparison to previous research. \\
 
 % , consisting for instance between the ERP system and warehouse systems, and the ERP system and the PDM system which should lend itself well to comparisons to previous research.\\
@@ -656,9 +638,8 @@ The latter research question beckons to a practical constructive approach. To de
 
 Answering the second research question also includes evaluation of how the end solution meets previously defined criteria and requirements. Any other issues and concerns that arise during the experiment part are also discussed.
 
-An additional outcome, a set of implementation guidelines and recommendations that is based on observed results and conclusions, was produced and attached to the study. % todo (see attachment x). % TODO attachment num 
+An additional outcome, a set of implementation guidelines and recommendations that is based on observed results and conclusions, was produced and attached to the study. % todo (see attachment x).
 
-% todo replace 'wärtsilä' with target organization
 The framework technology evaluation and choice is omitted from the scope of the thesis, though reasons for the ultimate framework tool choice are given and derived from Wärtsilä's requirements. Fit for the purpose of the assignment, quick assessment is used to determine a set of alternatives that are easy to use and satisfy the framework requirements. Arduously going through every available tool and painstakingly analyzing and quantifying their potential steps across to decision-making science and is therefore out of scope. 
 
 % b meyer: ironic that more computing power does not yield better tests, process contains bottlenecks of manual tasks
@@ -728,14 +709,14 @@ Reasoning follows an abductive logic path where an initial observation in the "r
 
 \section{Thesis structure}
 \label{section:structure}
-% TODO add num of parts
-This master's thesis study is divided to x parts. First, necessary background information on software integration testing, Wärtsilä's systems architecture, and information systems is presented in Chapter \ref{chapter:background}. The chapter also includes a requirements analysis based on interviews conducted at the company. Next, integration testing frameworks are explored by looking at existing models and a synthesis on their strategical, tactical, and operational nature is given. Along with a more generic look at integration testing theory, Chapter \ref{chapter:frameworkanalysis} breaks down the framework into process components, which are then put together in Chapter \ref{chapter:frameworkproposal} into a new framework model tailored for Wärtsilä.
+
+This master's thesis study is divided into eight parts. First, necessary background information on software integration testing, case company Wärtsilä's systems architecture, and information systems is presented in Chapter \ref{chapter:background}. The chapter also includes a requirements analysis based on interviews conducted at the company. Next, integration testing frameworks are explored by looking at existing models and a synthesis on their strategical, tactical, and operational nature is given. Along with a more generic look at integration testing theory, Chapter \ref{chapter:frameworkanalysis} breaks down the framework into process components, which are then put together in Chapter \ref{chapter:frameworkproposal} into a new framework model tailored for Wärtsilä.
 
 % testing automation are examined. efficient defect management. 
-The empirical part of the study evaluates a working prototype of the new testing framework. It presents a proof-of-concept implementation and reflects on the solution in respect to previous academic research and applicability in solving Wärtsilä's underlying business problems. The last chapter also contains critical appraisal of both the theoretical and empirical part of the study and if the thesis met its objectives.
+The empirical part of the study evaluates a working prototype of the new testing framework. It presents a proof-of-concept implementation and reflects on the solution in respect to previous academic research and applicability in solving Wärtsilä's underlying business problems. The last chapters contains critical appraisal of both the theoretical and empirical part of the study and if the thesis met its objectives while also discussed implications and limitations of study.
 
-% todo rephrase
-The story arc of the thesis is not unlike putting together Lego. In the background chapter the constructor can peruse the contextual setting and rough guidelines for assembly, while in the next part, he/she is shown ready models, built by experts, for reference and inspiration. After this, the box is merrily torn open and the bricks scattered on the floor. The builder can pore over individual pieces and see how they they appear, feel, and stick together. A prototype construct is made and compared to expectations and presented to experts and interested parties. Finally a new, better version of the construct is documented.
+
+In a manner of speaking, the story arc of the thesis is not unlike putting together Lego. In the background chapter the constructor can peruse the contextual setting and rough guidelines for assembly, while in the next part, he/she is shown ready models, built by experts, for reference and inspiration. After this, the box is merrily torn open and the bricks scattered on the floor. The builder can pore over individual pieces and see how they they appear, feel, and stick together. A prototype construct is made and compared to expectations and presented to experts and interested parties. Finally a new, better version of the construct is documented and discussed.
 
 \chapter{Research background}
 \label{chapter:background}
@@ -754,17 +735,16 @@ The first two chapters examine software testing from a more general perspective.
 
 Testing is an essential part of software engineering. Without a degree of confidence of sound operation and functional integrity, systems accumulate great risk and may ultimately produce more harm than benefit. Controlled testing reduces the number of incidents that would otherwise be discovered in the live environment and fixing which would be very expensive. \citep{jenkins2008software, liu2009unified} In a similar fashion, testing can point to ways the systems can be improved. For example, a system that is fluid and easy to use does not incur as many service and maintenance or information requests. And lastly, testing helps decision makers understand the risks involved in IT applications and services.
 
-Along with the functionality of the system, tests should also be applied to non-functional aspects such as performance and usability, because these also determine the validity of the system under test (SUT). Verifying that specified functions are implemented is not enough, but the system must reach and perform at an adequate level of service. % todo lähde
+Along with the functionality of the system, tests should also be applied to non-functional aspects such as performance and usability, because these also determine the validity of the system under test (SUT). Verifying that specified functions are implemented is not enough, but the system must reach and perform at an adequate level of service. In practice, peformance testing is impossible without some form of computer-controlled execution of tests \citep{laukkanen2006data}.
 
-Traditionally, testing is grouped to unit, integration, and system levels \citep{jenkins2008software, burnstein2003practical}. Unit testing is assuring that individual software modules and functions perform to specifications. When these are paired or grouped, the resulting connections and integrations must also be tested. Finally, system testing refers to proofing the finished software suite with a suitable array of use cases. 
+Traditionally, testing is grouped to unit, integration, and system levels \citep{jenkins2008software, burnstein2003practical}. Unit testing is assuring that individual software modules and functions perform to specifications. When these are paired or grouped, the resulting connections and integrations must also be tested, typically by the solution users, as opposed to developers who usually perform unit testing. Finally, system testing refers to proofing the finished software suite with a suitable array of use cases. It also includes load and performance tests. \citep{rehman2007testing}
 
-%todo reference for first sentence?
-The distinction between unit, integration, and system tests is not clear, however. Some authors consider end-to-end integration testing akin to system tests. \citet{duvall2007continuous} writes about \emph{component testing} synonymous with integration testing. \citet{pezze2008software} and \citet{benz2007combining} consider this an intermediary stage between unit and integration/system tests while \citet{burnstein2003practical} likens component testing to unit testing. IEEE defines integration testing as testing in which \emph{"software components, hardware components, or both are combined and tested to evaluate the interaction among them"} \citep{ieee2010systems}.
+The distinction between unit, integration, and system tests is not clear, however. Some authors consider end-to-end integration testing akin to system tests \citep{tsai2001end, paul2001end}. \citet{duvall2007continuous} writes about \emph{component testing} synonymous with integration testing. \citet{pezze2008software} and \citet{benz2007combining} consider this an intermediary stage between unit and integration/system tests while \citet{burnstein2003practical} likens component testing to unit testing. IEEE defines integration testing as testing in which \emph{"software components, hardware components, or both are combined and tested to evaluate the interaction among them"} \citep{ieee2010systems}.
 
 % What to test
-The fluid progression from atomic unit tests to holistic system tests strongly reflects the software development process. Naturally, software has to be tested to during and after initial development, but there are other reasons, too. Any change in code or specifications, the environment, or testing policy, or plans can act as a trigger for testing. Systematically repeating a set of tests to ascertain changes (like fixes) have not introduced new errors to previously functional code is called regression testing. The execution of regression tests is typically automated (TODO references). A nearby concept, \textit{retesting} refers to examining if a fix has actually resolved a software bug \citep{jenkins2008software}.
+The fluid progression from atomic unit tests to holistic system tests strongly reflects the software development process. Naturally, software has to be tested to during and after initial development, but there are other reasons, too. Any change in code or specifications, the environment, or testing policy, or plans can act as a trigger for testing. Systematically repeating a set of tests to ascertain changes (like fixes) have not introduced new errors to previously functional code is called regression testing. The execution of regression tests is particularly suited for automation and executing all applicable tests just in case a common strategy \citep{jenkins2008software, pezze2008software}. A nearby concept, \textit{retesting} refers to examining if a fix has actually resolved a software bug \citep{jenkins2008software}.
 
-Continuous integration (CI) is a further approach where testing is done frequently as changes are made to source code. The purpose is to weed out issues and defects related to component inter-operation before they take root can cause major trouble. \citet{duvall2007continuous} described continuous integration as:
+Continuous integration (CI) is a further approach where testing is done frequently as changes are made to source code. The purpose is to weed out issues and defects related to component inter-operation before they take root can cause major trouble. \citet{fowler2006continuous} described continuous integration as:
 
 \begin{adjustwidth}{2.5em}{0pt}
 \small
@@ -798,6 +778,7 @@ Naturally, automation comes with its downsides and risks, some of which are not 
 
 \section{Testing at Wärtsilä}
 
+% tähänkö esittely?
 Wärtsilä is a Finnish technology company providing lifecycle power solutions for the marine and energy markets. The three main business units marine solutions produces engines primarily for cruise ships, power plants designs and constructs plants, and services offer a range of maintenance services and support to Wärtsilä's customers. \citep{wartsila2013web}
 
 % add mention of interview
@@ -857,7 +838,7 @@ The defined testing processes are general, and roughly span test design and plan
 
 % there exists process for general test design, prioritizing, planning, identifying test data, the framework focuses on test execution and making testing technically possible, testing policy, communication, environment, test suite and maintenance, practical process for test execution, reporting
 
-Software requirements and specifications are collected among solution key users and managers. Unit tests are performed by the vendor, which is followed by integration tests in Wärtsilä's test environment executed by Wärtsilä's technical experts and possibly aided by the vendor. Next, system tests are done by the solution manager, who then passes the solution forward to business key users for verification testing. % has verification testing been introduced  
+Software requirements and specifications are collected among solution key users and managers. Unit tests are performed by the vendor, which is followed by integration tests in a test environment executed by Wärtsilä's technical experts and possibly aided by the vendor. Next, system tests are done by the solution manager, who then passes the solution forward to business key users for verification testing. % has verification testing been introduced  
 
 Test cases are constructed manually and are not maintained. After a development project is closed and moves to \eph{live maintenence mode}, new cases are created when needed as new features or enhancements are released. In some few cases, a battery of regression tests is maintained. Testing results and found incidents are logged to a bug tracking system, or collected in shared files or email conversations. 
 
@@ -869,9 +850,7 @@ The reuse and reusability of testing objects is minimal. Steps have been taken t
 \section{Requirements for the integration testing framework} 
 \label{section:requirements}
 
-%Todo: add to explore qualitative analysis
-
-Three technical experts at Wärtsilä shared their views on the framework early on in interviews conducted by the researcher. The interviews, approximately an hour in length, were loosely structured and had no presumptions about the nature of the framework-to-be. The mission was to elicit Wärtsilä's requirements for integration testing including technical, functional, and practical aspects. The two latter interviewees were, however, presented with findings from earlier interviews for their opinion and the addition of any further comments or clarifications.
+In ealry explorative analysis, three technical experts at Wärtsilä shared their views on the framework in interviews conducted by the researcher. The interviews, approximately an hour in length, were loosely structured and had no presumptions about the nature of the framework-to-be. The mission was to elicit Wärtsilä's requirements for integration testing including technical, functional, and practical aspects. The two latter interviewees were, however, presented with findings from earlier interviews for their opinion and the addition of any further comments or clarifications.
 
 The first interviewee, who also commissioned the work, acts as technical integrations architecture expert. Confirmed in the interview, the core test cases or integration message exchanges are of synchronous or asynchronous type. 
 
@@ -916,7 +895,7 @@ The requirements collected is an excellent yardstick when selecting framework te
 
 \section{Summary}
 
-This chapter reviewed the theoretical premises of integration testing and the practical context of the to-be framework at Wärtsilä. Integration testing can be done pairwise moving systematically over the entire system or through more system test oriented end-to-end tests where multiple integrations are tested in one test scenario. Previous research has proved that controlled early testing reduces development and maintenance costs and is required throughout the software life-cycle. % Todo lähde 
+This chapter reviewed the theoretical premises of integration testing and the practical context of the to-be framework at Wärtsilä. Integration testing can be done pairwise moving systematically over the entire system or through more system test oriented end-to-end tests where multiple integrations are tested in one test scenario. Controlled early testing reduces development and maintenance costs and is required throughout the software life-cycle.
 
 Wärtsilä's relatively conventional technological and business environments should allow for --- and benefit from --- testing automation, which makes the thesis highly relevant. The case specific requirements collected and presented in the chapter serve as basis for evaluating testing solutions and building the framework.
 
@@ -987,7 +966,9 @@ The framework requires manual setup, for instance manual validation and storing 
 
 \section{Surrogate system}
 
-\citeauthor{huang2008surrogate}'s \citeyearpar{huang2008surrogate} model, a precursor to the authors unified testing framework presented in figure \ref{fig:liu}, is concerned with the testing environment arrangements related to surrogates or mock services, but figure \ref{fig:huang} already shows a clear framework structure stretching from test case generation to verification of system functionality. The area around simulating components is the area of focus, though both of the authors' models attempt to elaborate on the subprocesses and tasks that lie upstream on the testing process chain. \citep{huang2008surrogate}
+\citeauthor{huang2008surrogate}'s \citeyearpar{huang2008surrogate} model, a precursor to the authors unified testing framework presented in figure \ref{fig:liu}, is concerned with the testing environment arrangements related to stubs or mock services. The surrogate apparatus could be seen as a test harness and the tools for its construction. 
+
+Figure \ref{fig:huang} already shows a clear framework structure stretching from test case generation to verification of system functionality. The area around simulating components is the area of focus, though both of the authors' models attempt to elaborate on the subprocesses and tasks that lie upstream on the testing process chain. \citep{huang2008surrogate}
 
 \begin{comment}
 \begin{figure}[H]
@@ -1031,7 +1012,7 @@ The framework requires manual setup, for instance manual validation and storing 
 \begin{figure}[H]
   \begin{center}
     \includegraphics[width=13cm]{huang_et_al_framework.png}
-    \caption{Surrogate system architecture \citep{huang2008surrogate}}
+    \caption{Surrogate apparatus architecture \citep{huang2008surrogate}}
     \label{fig:huang}
   \end{center}
 \end{figure}
@@ -1048,9 +1029,9 @@ The framework requires manual setup, for instance manual validation and storing 
 \end{figure}
 \end{comment}
 
-In the surrogate system, the environment is made of the application container which may or may not contain parts or the whole of the system under test and in which surrogates, or mock services or stubs, are deployed. Again, the many interfaces in the framework are highlighted. The surrogate generator has a component for configuring surrogates as well as a library of functions for imitated behaviour.
+In the surrogate apparatus, the environment is made of the application container which may or may not contain parts or the whole of the system under test and in which surrogate components, essentially mock services or stubs, are deployed. Again, the many interfaces in the framework are highlighted. The surrogate generator has a component for configuring surrogate components as well as a library of functions for imitated behaviour.
 
-\citet{huang2008surrogate} instruct that before test execution the necessary surrogates should be defined by test case and deployed. Before test case execution, the surrogate component availability is checked. To achieve true automation, then, such environmental setup should also be automated.
+\citet{huang2008surrogate} instruct that before test execution the necessary surrogate components should be defined by test case and deployed. Before test case execution, the surrogate component availability is checked. To achieve true automation, then, such environmental setup should also be automated.
 
 % data driven testing another way of saying automated testing?
 
@@ -1058,7 +1039,7 @@ In the surrogate system, the environment is made of the application container wh
 
 The \citet{liu2009unified} model (Figure \ref{fig:liu}) includes processes, objects, and agents. Based on a UML sequence diagrams, the test generator semi-automatically creates test cases later submitted to the execution engine. Test runs are facilitated by a surrogate engine or engines which mock external systems. After execution, IBM's proprietary ITCAM technology aggregates execution traces together with the help of a trace correlator, which then pass the traces for transformation into a standard format. The test cycle is finished off by verification on the integration test case and execution trace and returning the result to the execution engine.
 
-The surrogate \emph{generator} was conspicuously left out of the model. The authors chose to scope out this part of the framework and focus on the testing execution process rather than preconfiguration.
+The surrogate \emph{generator} was conspicuously left out of the model. The authors chose to scope out this part of the framework and focus on the testing execution process rather than preconfiguration. The framework is dubbed 'unified' because it is was designed to satisfy continuous integration testing requirements in a service-oriented environment.
 
 The researchers separated test case structure and logic for platform independence. The test logic and configuration settings were encoded in separate XML files. The unified testing framework was built to be technology independent so 
 separate plug-ins were created for the SOA context and technologies.
@@ -1142,7 +1123,7 @@ Since all of the models are rather pragmatic and technical, a more holistic pers
     \node [rect, yshift=-1.4cm, fill=white] (rlt) {Results};
     
     \node [rect, right=of stg, fill=white] (fmw) {Process structure};
-    \node [rect, right=of req, fill=white] (tcg) {Test/surrogate generation};
+    \node [rect, right=of req, fill=white] (tcg) {Test case/stub generation};
     \node [rect, right=of prc, fill=white] (run) {Running tests};
     \node [rect, right=of rlt, fill=white] (mon) {Monitoring/ verification};
     
@@ -1194,17 +1175,19 @@ The framework is analyzed from a strategic, technical/structural, and component 
 
 The structure should be robust or modular enough to be separable into clear and concrete constituent parts, like test cases, in human or machine readable form. These should be constructed with regard the framework strategy and structure scope. The modularity permits the fluent addition of new test cases, integrations, or other components to the framework.
 
+Finally, it should be remarked that the models do not address performance testing directly. Perhaps the authors reasoned this was implicit in the frameworks, automation being the key enabler for load and stress tests. It all boils down to which measures should be followed. If the execution traces include relevant metrics then performance testing is logically possible through the framework.
+
 \begin{comment}
 The testing process can vary in its mode of execution or degree of automation. In what is perhaps the most extreme case, test case are run automatically every time a change is committed to system source code. This approach is called continuous integration (CI). 
 \end{comment}
 
-% test harness ephasizes stubs and mock-ups
+% add test harness to surrogate introduction
 
 \chapter{Deconstructing the framework}
 \label{chapter:frameworkanalysis}
 
 % drop something in funnel runs automatically 
-This chapter examines individual components and subprocesses of integration testing, based on the models and model synthesis derived in the previous chapter. The first section enumerates important testing strategy decisions, while the next concentrates on practical questions and what options and tools there are to implement the strategy. The final section evaluates the framework for a component and maintenance perspective.
+This chapter examines individual components and subprocesses of integration testing, based on the models and model synthesis derived in the previous chapter. The first section enumerates important testing strategy decisions, while the next concentrates on practical questions and what options and tools there are to implement the strategy. The third section evaluates the framework for a component and maintenance perspective. Finally, we take step back and take heed from potential testing and automation pitfalls presented in academic literature. 
 
 % testing strategy
 \section{Testing strategy}
@@ -1316,7 +1299,7 @@ Test case creation is perhaps the most time-consuming task in automated testing 
 
 Models or contracts derived from code or system specifications can be used to create test cases. \citet{tsai2002coyote} introduces an XML-based framework for automated test case generation from WSDL service descriptions. \citet{bai2005WSDL} and \citet{di2007web} similarly offer WSDL service description based generation strategies. \citet{dalal1999model} present a combinatorics-based data model that produces a minimum number of test cases for some input parameter related coverage criteria. Formal models, like finite state machines, can also be used to produce test cases, though the formalization of vague specifications and constructing the model in such a way that test case production is possible takes time and effort, and can make model-based approaches look unattractive compared to the alternative, capture and replay. 
 
-In situations where the system suite is already in place, cases and related test data can be produced by recording or capturing user actions in the system environment and turning these into use cases that can be automatically replayed. However, researchers like \citet{zallar2001you} and \citet{kit1999integrated} criticize in particular the capture/replay paradigm claiming that maintaining the test scripts is cumbersome and as such will often be left undone rendering the test cases unusable and potentially misleading. \citet{kit1999integrated} suggests to just leave out capture and simply use automation to replay. Repetitive tasks should be automated, creative ones not \citep{pezze2008software}. \citet{fewster1999software} also bluntly state that \emph{"record and replay is not test automation"} though their message is that there is more to testing and that record/replay still requires manual work to achieve automation. 
+In situations where the system suite is already in place, cases and related test data can be produced by recording or capturing user actions in the system environment and turning these into use cases that can be automatically replayed. However, researchers like \citet{zallar2001you} and \citet{kit1999integrated} criticize in particular the capture/replay paradigm claiming that maintaining the test scripts is cumbersome and as such will often be left undone rendering the test cases unusable and potentially misleading. \citet{kit1999integrated} suggests to just leave out capture and simply use automation to replay. \citet{pezze2008software} confirm that repetitive tasks should be automated --- not creative ones. \citet{fewster1999software} also bluntly state that \emph{"record and replay is not test automation"} though their message is that there is more to testing and that record/replay still requires manual work to achieve automation. 
 
 \subsection{Running automated tests}
 
@@ -1325,7 +1308,7 @@ The testing process is performed by an engine program that runs the test cases. 
 While extreme, CI's continuous testing can make integration more manageable with its gradual approach. In the case of integration testing, the important execution decisions are related to integration strategy, i.e. which tests run first \citep{duvall2007continuous}. If test cases have been prepared, regularly rerunning tests and regression testing is easy, though implementing automated test processes still takes an initial investment of time and effort. Additional automation issues are examined in Section \ref{section:pitfalls}.
 
 % todo
-Virtually any script can be scheduled commands and the technical automation challenge is not as interesting as test case generation or oracle construction, more attention is paid to the latter. Selecting the tool or technology which runs the tests depends on its additional features and contextual factors.
+Virtually any script can be scheduled to execute commands and the technical automation execution challenge is not as interesting as test case generation or oracle construction, more attention is paid to the latter. Selecting the tool or technology which runs the tests depends on its additional features and contextual factors.
 
 %move to intro/conclusion
 % It is not possible to go through every code branch or to test every possible input sequence. As \citet{myers1976software} put it, testing is a problem in economics. Test cases must provide a maximum yield on investment, where yield is measured as the probability that the case uncovers a new defect. \citep{myers1976software}
@@ -1343,15 +1326,22 @@ Typically, test cases contain assertions of the correct result which is compared
 
 % As new integrations are introduced, the framework should provide a test harness that is easy to adopt: integration test cases should have a template and their addition to the automatically executed test suites should involve a negligible amount of work \citep{fewster1999software}. The case creation guidelines, especially when paired with capture techniques, can expedite the testing process when compared to ad hoc testing even when. added bonus of having .
 
+% add mock service too?
 \subsection{Test case}
 
+% what is a test case
+% framework would be mostly making these and mock services
+% contain assertions
+% resrouce, a great investment
 
 % Tracker a separate tool. Test case id communicable, can be run individually.
 
 \subsection{Execution engine}
 
+
 The execution engine is the 
 %Any will do. But easy test case manipulation and editing.
+%afford easy and flexible testing and be suitable for 
 
 \subsection{Test oracle}
 
@@ -1362,11 +1352,15 @@ How to add assertions to the cases.
 \section{Integration testing pitfalls}
 \label{section:pitfalls}
 
-Testing management is no light matter: \citet{reid2005art} evaluated that about 50\% of system development time and more than 50\% of costs are spent on testing. Indeed, integration testing can fail in many ways \citep{van2008identifying}. Testing may be overlooked as a non-value adding activity and integration considered done as soon as systems have been connected. Alternatively, testing resources are considered expendable, and testing given a low priority, reducing it to a project's 'crushable zone'. According to \citet{van2008identifying}, not identifying and communicating integration strategy, responsibilities and accountabilities, lines of reporting and escalation --- or sharing knowledge --- are also typical pitfalls, exacerbated by lack of expertise and good document management. Additional problems are caused by physically separated locations, and failing configuration or incident management. \citep{van2008identifying}.
+Testing management is no light matter: \citet{reid2005art} evaluated that about 50\% of system development time and more than 50\% of costs are spent on testing. A relatively small mistake can be costly and, indeed, integration testing can fail in many ways \citep{van2008identifying}. This section takes stock of the most common pitfalls in both testing and integrations.
 
-There are also many potential stumbling blocks in automation. Algorithms cannot match the intelligence and intuition of an experienced human tester, while some systems undergo so many changes that automation makes little sense: as changes are introduced into the systems and code, related test cases must be examined, their reusability ascertained, out-of-date cases should be discarded, and new cases created where necessary \citep{zhang2011approach}. Automation  does not counteract inherently flawed software development or testing processes. \citep{jenkins2008software, zhang2011approach).
+Testing may be overlooked as a non-value-adding activity and integration considered \emph{done} as soon as systems have been connected. Alternatively, testing resources are considered expendable, and testing given a low priority, reducing it to a project's \emph{'crushable zone'}. According to \citet{van2008identifying}, not identifying and communicating integration strategy, responsibilities and accountabilities, lines of reporting and escalation --- or sharing knowledge --- are also typical pitfalls, exacerbated by lack of expertise and good document management. Additional problems are caused by physically separated locations, and failing configuration or incident management. \citep{van2008identifying}.
 
-\citet{leung1990study} present a typology of integration errors and classify them to interpretation errors, interface errors and miscoded call errors, which are again divided into subgroups.  The error types are presented in figure \ref{fig:errors}.
+There are also many potential stumbling blocks in automation. Algorithms cannot match the intelligence and intuition of an experienced human tester and \citet{kaner1997pitfalls} points out that automated tests cases are usually simple in structure and consequently less likely to stumble upon a bug. Some systems undergo so many changes that automation makes little sense: as these changes are introduced into the systems and code, related test cases must be examined, their reusability ascertained, out-of-date cases should be discarded, and new cases created where necessary \citep{zhang2011approach, kaner1997pitfalls}. Automation  does not counteract inherently flawed software development or testing processes. \citep{jenkins2008software, zhang2011approach).
+
+\citep{kaner1997pitfalls} reminds that automation takes time and can slow testing down at first. The typical implementation workflow is to first execute a test case manually to see that it passes and then automate it. This results in an effete set of test cases which finds bugs at reduced rate compared to manual testing \citep{kaner1997pitfalls}.
+
+\citet{leung1990study} present a typology of integration errors and classify them to interpretation errors, interface errors and miscoded call errors, which are again divided into subgroups. Errors may be the resulf of superfluous, missing, or plainly incorrect function calls. These can be further mapped under interpretation errors which are mistakes in program logic, miscoded error calls where the functionality happens at the wrong time or place, or interface errors where standards and agreements have been broken. The error types are presented in figure \ref{fig:errors}.
 
 \begin{figure}[H]
 \begin{center}
@@ -1376,21 +1370,28 @@ There are also many potential stumbling blocks in automation. Algorithms cannot 
     Missing & Not all necessary functionality implemented & Call instruction missing on path & Standards or agreements are violated \\ 
     \hline
     Extra & Function performs more than what is expected or needed & Call instruction on a path which should not have it & Standards or agreements are violated \\
-    \end{tabular}
+    \end{tabular} 
 \end{center}
-\caption{Integration testing errors \citep{leung1990study}} \label{fig:errors}
+\caption{Integration testing errors, adpated from \citep{leung1990study}} \label{fig:errors}
 \end{figure}
 
-Analyzing defects is a possible quality assurance strategy: determining which kinds of errors are most common and testing for them in particular \citep{pezze2008software}. % TODO citation
+% to avoid miscoded error call test test cases
+% to avoid standard violations test test cases
+% to avoid intepretation error focus on specification, test 
+
+A testing framework can serve to define common ways of working and alleviate the testing time crunch by speeding up testing through automation. It cannot answer problems in communication of responsibilities and accountabilities, though it can offer a shared view into test results and the current state of the SUT.  
+
+While the testing tool cannot prevent the errors listed in Figure \ref{fig:errors} it is equipped to detect them quickly and make records of each one. Studying bugs has its merits. Determining which kinds of errors are most common and testing for them in particular is known as fault-based testing. It has been found quite promising but is not yet widely applied in the field of software testing. \citep{pezze2008software} Ideally, a test framework will collect information about execution so that defect analysis is possible. This can point to ways to improve integration quality and lighten the burden on testing.
   
 \chapter{Piecing together a new framework}
 \label{chapter:frameworkproposal}
 
 In the previous chapter \citet{fewster1999software}, \citet{huang2008surrogate}, \citet{liu2009unified}, and \citet{laukkanen2006data} presented framework models for integration testing, the key processes of which include test case generation and design, executing test cases, creating mock systems, simulating unavailable systems or services, verification of results, and execution monitoring. This chapter takes these building blocks and, according to instructions laid out already in Chapter \ref{chapter:background}, assembles a framework suitable for Wärtsilä.
 
+After a framework model is shown, the chapter continues to practical implementation and showcases a construct built to address Wärtsilä's testing needs which were documented in Chapter \ref{chapter:background} and based on theoretical observations made earlier in Chapter \ref{chapter:frameworktheory}. The purpose of the construct is to act as proof of concept and, in true testing style, give early indicators of how valid the theoretical foundations are. The proof of concept is also ideal in highlighting practical concerns that arise during the experiment.
+
 \section{Wärtsilä's integration testing framework}
 
-% todo mock service terminology
 There are a total of six processes and three objects involved in the the proposed framework, along with the system under test (SUT) and a test resource database. The processes are divided into two steps. The first, preparatory step, contains the creation and preparation of test resources while the second, the execution step, those resources are exercised in conducting integration tests.
 
 % assertions
@@ -1462,7 +1463,7 @@ Figure \ref{fig:framework} below synthesizes and combines integration testing th
 \path [line] (cap) -- (rec);
 \path [line] (rec) -- (gen);
 \path [line] (gen) -- (cse);
-\path [line] (ver) -- (upd); % Todo: what is this?
+\path [line] (ver) -- (upd); 
 %\path [line] (cse) -- (exe);
 \path [line] (cse) -- (2.5,-3) -- (2.5,-8) -- (exe);
 \path [dots] (upd) -- (db);
@@ -1478,14 +1479,11 @@ Figure \ref{fig:framework} below synthesizes and combines integration testing th
 \end{figure}
 \end{comment}
 
-The preparation and execution steps are clearly divided in the picture. The execution is a step which repeats istelf, depending on how the work is scheduled.
+The preparation and execution steps are clearly divided in the picture. The execution is a step which repeats istelf, depending on how the tests should be scheduled.
+
+% todo more test?
 
 % Choose coverage, all calls or only most important ones, which integrations are more important, no relation -> relation -> all calls
-
-
-% todo wtf doing here?
-% wtf is a proof of concepts
-This chapter presents a proof of concept construct built to address Wärtsilä's testing needs presented in Chapter \ref{chapter:background} and based on theoretical observations made earlier in Chapter \ref{chapter:frameworktheory}. The purpose of the construct is to act as proof of concept and, in true testing style, give early indicators of how valid the theoretical foundations are. The proof of concept is also ideal in highlighting practical concerns that arise during the experiment.
 
 \section{Prototype structure}
 
@@ -1559,9 +1557,13 @@ In the framework architecture, SoapUI contains script logic and in MVC terms act
 
 Execution engine duties are split between the actual running of the tests and scheduling test cycles. The execution engine running the tests, SoapUI, also collects execution traces. These are transformed into legible form (simple text) and can be examined in the Jenkins UI. Accordingly, what can only be called a gross initial oversight, visualizing the test results is added as a process to the overall framework process.
 
+In the construct managing the test packages and executing the tests are removed from the development environment for two reasons. Firstly, testing and test case development is seperated. Those who only wish to examine the health of the SUT can do so through a test execution controller with a graphical UI. Restricting access to code is also a security measure.
+
+% todo
+
 \subsection{SoapUI}
 
-\textbf{SoapUI}\footnote{http://www.soapui.org} is an IDE, or integrated development environment, and is used in constructing test scripts, both manually and through \emph{capture and playback}. Capture can also be used to to create scripts to simulate the behavior of systems thereby satisfying the requirement of having surrogate engines. Effectively, SoapUI uses capture for both test case \emph{and surrogate engine} generation. These mock service surrogates allow verification by providing an otherwise absent execution trail or returning courtesy messages of the test outcome, or what has happened across the integration black box.
+\textbf{SoapUI}\footnote{http://www.soapui.org} is an IDE, or integrated development environment, and is used in constructing test scripts, both manually and through \emph{capture and playback}. Capture can also be used to to create scripts to simulate the behavior of systems thereby satisfying the requirement of having a surrogate engine. Effectively, SoapUI uses capture for both test case \emph{and surrogate component} generation. These mock service or surrogates components allow verification by providing an otherwise absent execution trail or returning courtesy messages of the test outcome, or what has happened across the integration black box.
 
 After their creation test cases can be run in SoapUI and the tool affords a program script that can be run on the command line simply by specifying which SoapUI project and which test suite or cases should be run.
 
@@ -1589,8 +1591,6 @@ who will create test cases. which tool is easiest to use and most feasible.
 
 \section{Heuristic evaluation of the framework}
 
-% todo: add comparison to reqs
-
 The framework is evaluated mainly by qualitative measures, but a quick heuristic analysis is also used to validate to new model. This section compares the proposed framework to the requirements laid out in Section \ref{section:requirements}, and the presented framework models and framework theory.
 
 \begin{description}
@@ -1611,12 +1611,12 @@ The framework is evaluated mainly by qualitative measures, but a quick heuristic
   \item[R8 It shall be possible to generate test loads, and conduct load tests.] \hfill \\
    Load tests are possible based on SoapUI test casesa and surrogates, using the LoadUI sister tool.
   \item[R9 It shall be possible to generate test loads and conduct stress tests.] \hfill \\
-   Stress tests are possible based on SoapUI test casesa and surrogates, using the LoadUI sister tool.
+   Stress tests are possible based on SoapUI test cases and mock services, using the LoadUI sister tool.
   \item[R10 It shall be possible to monitor test results and performance metrics.] \hfill \\
  LoadUI offers a dashboard and statistics view into performance metrics.
 \end{description}
 
-Compared to the models by \citet{liu2009unified} and \citet{huang2008surrogate} in Chapter \ref{chapter:frameworktheory} the new model covers most the same ground with the addition of the surrogate generation process. 
+Compared to the models by \citet{liu2009unified} and \citet{huang2008surrogate} in Chapter \ref{chapter:frameworktheory} the new model covers most the same ground with the addition of the surrogate component generation process. 
 % Platform independennce not requirement for Wärtsilä, involved coding plugins and adapters, which should be avoiuded
 
 \citeauthor{laukkanen2006data}'s \citeyearpar{laukkanen2006data} framework includes test asset management as a responsibility area to control test cases and attached data. The framework could be extended with a database to manage test resources.
@@ -1633,7 +1633,7 @@ The framework satisfies the first criteria easily. Executing packages of tests p
 Automated testing already requires the second criteria be satisfied. Assuming the test server and SUT servers are available, and test cases contain necessary information to access information services, the test set-up is complete. Because some features require inputting information, like creating test orders, which can not be allowed in production, mock services are used. Here, test messages travel through the same \emph{"integration black box"} as actual messages would, and the only part that is not "real" is the end point system the testing of which is outside of integration test scope. Therefore the described test approach provides an accurate result of integration functionality and health. Not part of the automation, a test engineer should monitor execution and react appropriately in case a test case fails.
 
 As for the third criterion, running a test manually and adding the test to the automated pack both require writing or generating the case first. With a good template and guidelines in place, the case writing task can be expedited and the engineer adds the case to the correct suite where it will automatically be picked up by the test scripts run through the framework.
- 
+
 \section{Qualitative evaluation --- Workshop}
 
 % should there be more requirements in the background section, add interviews summarize succinctly
@@ -1656,12 +1656,12 @@ The most sought-after results of the workshop were the observations of people wh
 
 At the beginning of the meeting, participants were presented with a mission statement and a short introduction to the topic explaining the reasons that led to commissioning an automated testing framework study. The subject of current testing was brought under discussion by the technical experts. 
 
-%todo add whitebox to glossary, shorten headings or fix header otherwise
 The first technical expert said that for her, testing mostly consists of code inspection, a white-box testing method not investigated or included in the framework. Code inspection is done by the developer to find issues in the code directly, without actually executing it. The expert also added that the lacking \emph{negative testing}, or testing cases that are expected to fail to see if ill-formed input is able to disrupt systems, was a problem. 
 
 The remaining parties quietly agreed with the current testing status that was presented which stated that testing is largely ad hoc and driven by each project in its own way. The testing expert and technical expert jokingly referred to testing being a mandatory step whose purpose is not so much to uncover bugs but to prove systems are ready for the next go-ahead. While the veracity of such a claim is dubious, a framework can serve to ensure proper testing by communicating that negative cases should also be added to testing scope.
 
 \subsection{Requirements validation}
+\label{subsection:requirementsvalidation}
 
 Following the introduction to Wärtsilä testing, the collected framework requirements (see Section \ref{section:requirements}) were shared with the intent to validate them again, and determine the most important ones. The first technical expert put most weight on the requirement demanding test generation (R3) or automatic creation. Concern centered on the labour cost of creating tests and generation was crucial in making larger scale testing economically feasible. While the generation requirement may be argued to be not the most important component of a testing framework per se, it clearly sparked excitement among the participants. The requirement has a lot of potential for gains.
 
@@ -1675,13 +1675,13 @@ Throughout the discussion the addition of new requirements was welcomed. Along w
 
 \subsection{Framework use and maintenance validation}
 
-The issue of framework maintanance was raised by the testing expert. Because the proposed framework required test generation using capture, test resources would have to be updated after any change in the systems' behavior that would render them moot or possibly even misleading. This was also a principal concern in the criticism of capture and replay discussed in Chapter \ref{chapter:frameworkanalysis}. After discussing the matter with the technical experts the workshop participants concluded that test reusability would be high because test cases would only have to change very infrequently. Hence, capture was accepted as a cost-effective way to create test resources.
+The issue of framework maintanance was raised by the testing expert. Because the proposed framework required test generation using capture, test resources would have to be updated after any change in the systems' behavior that would render them moot or possibly even misleading. This was also a principal concern in the criticism of capture and replay discussed in Chapter \ref{chapter:frameworkanalysis}. After discussing the matter with the technical experts the workshop participants concluded that test reusability would be high because test cases would only have to change very infrequently. Hence, capture was accepted as a cost-effective way to create test resources. The biggest automation pitfall was bypassed.
 
-The framework model (see Figure \ref{figure:framework}) was broadly accepted. One partner expert pointed out that the model explicitly prescribed a database for test resources where any filing system would have sufficed. The participants agreed to remove this technical prescript. The connecting arrow between "updating" and the test resource library was also ambigious in that it did not distinguish between adding a new test case or mock service the library or updating test results and logs after a testing event.
+The framework model (see Figure \ref{fig:structure}) was broadly accepted. One partner expert pointed out that the model explicitly prescribed a database for test resources where any filing system would have sufficed. The participants agreed to remove this technical prescript. The connecting arrow between "updating" and the test resource library was also ambigious in that it did not distinguish between adding a new test case or mock service the library or updating test results and logs after a testing event.
 
 The demo was also met with appreciation. While agreeing in principle, the participants were eager to pilot the prototype to see how it fit into the company's way of working. The framework terminology should also replaced with terminology used at Wärtsilä.
 
-An alternative suggestion for the implementation also surfaced in which the testing would be done through the existing message monitoring tool. The monitoring tool already made records of messages before and after integration transformation and had the functionality resending recorded messages. This promising alternative is explored more in Chapter \ref{chapter:discussion}.
+An alternative suggestion for the implementation also surfaced in which testing would be done through the existing message monitoring tool. The monitoring tool already makes records of messages before and after integration transformation and had the functionality of resending recorded messages. This promising alternative is explored more in Chapter \ref{chapter:discussion}.
 
 \subsection{Summary}
 
@@ -1691,7 +1691,7 @@ The most important findings of the experiment were:
 \begin{enumerate}
 
 \item High level of test resource reusability supports capture and replay
-\item New REQ11: Version control in naming test resources (cases, environments, surrogates)
+\item New REQ11: Version control in naming test resources (cases, environments, mock services)
 \item New REQ12: Integration to bug tracker (email report)
 \item Negative testing should be included in testing scope
 \item Framework should be piloted in a project
@@ -1700,7 +1700,7 @@ The most important findings of the experiment were:
 \item Code inspection as a way of testing
 \item Test "library" rather than "database"
 \item Use resources already available: monitoring tool based test framework
-\item "Update resources" process has ambigiuous links
+\item "Update resources" process has ambiguous links
 %\item Test coverage who supports who tests, 
 %\item Curiosity over test tool selection
 \end{enumerate}
@@ -1716,6 +1716,7 @@ The participants agreed to a follow-up meeting where topics like adopting and pi
 \end{figure}
 
 TODO some text
+% todo evaluate costs
 
 % All the discussion was taped and the participants were given Post-it notes to write down all ideas that surfaced during the workshop. In total six persons - consisting of developers from maintenance, team leaders and one senior manager - attended the workshop.
 % Goals - applicability of the model, questioning it
@@ -1724,10 +1725,10 @@ TODO some text
 % teknisempi kuvaus? kenellä on nyt integraatiovastuu ja kuka testaa 
 % research method
 
-
-
 \chapter{Discussion}
 \label{chapter:discussion}
+
+todo: some text
 
 \begin{comment}
 - the mixing of manual and technical aspects
@@ -1745,44 +1746,53 @@ TODO some text
 - capture replay remains debateable
 \end{comment}
 
-%mixing manual and technical aspects
-One of the fundamental difficulties in developing an automated integration testing framework is making sense the technology and manual process relationship. The two are haplessly intertwined. Clearly as a framework for \emph{automated} testing the framework is realized by algorithms and brute computing power, but such a tool cannot be wielded successfully without human intervention and maintenance. It is this blurred relationship of man and machine, the delicate mix of technological configuration and human work process model which tries the framework designer and motivates the researcher. 
+\section{est1}
 
-% TODO: lähde prosessisuunnittelusta.
-Harking back to \citep{pezze2008software} definition of an circuit board with empty slots for components is useful here. The framework consists of roles to be filled by applications or manual processes, the choice being left to each individual testing project. The framework will fail if it is too narrow and imcompatble or too broad and poorly supported.
+%mixing manual and technical aspects
+One of the fundamental difficulties in developing an automated integration testing framework is making sense the technology and manual process relationship. The two are hopelessly intertwined. Clearly as a framework for \emph{automated} testing the framework is realized by algorithms and brute computing power, but such a tool cannot be wielded successfully without human intervention and maintenance. It is this blurred relationship of man and machine, the delicate mix of technological configuration and human work process model which tries the framework designer and has also motivated the researcher.
+
+Harking back to the \citep{pezze2008software} definition of a \emph{"circuit board with empty slots for components"} is useful here. The framework consists of roles or slots to be filled by applications or manual processes, the choice being left to each individual testing project. The framework will fail if it is too narrow and incompatible or too broad and poorly supported.
+
+The Wärtsilä framework allows extension and accepts new test cases or surrogate components for a predefined set of protocols. The circuit board is then constituted for earch project separately. Tests can be divided into groups so that only the ones that need to be exectuted can be invoked. Test packages can each be configured to run at their own intervals. The framework adapts to testing need while retaining the same testing process and technical form.
 
 % manual challenges and adaptin the framework
-Confirmed in the empirical part the thesis, an essential challenge is introducing the framework into the company's way of working. Testing requires the cooperation of many individual stakeholders. In Wärtsilä's case this contribution was seen as extra work for solution managers and soliciting their support was difficult. Here, a clearly defined framework which states what resources or contributions are needed can bring credibility and trust to the project and provide a channel for cooperation. Testing is step that repeatedly crops up in software development projects and having a documented way to do so is advantageous.
+Confirmed in the empirical part the thesis, an essential challenge is fitting the framework into the target company's way of working. Testing organization requires the cooperation of many individual stakeholders. In Wärtsilä's case this contribution was seen as extra work for solution managers and soliciting their support was difficult. 
 
-% framework bonuses
-The kicker to having a documented process and automated testing framework is the reusabilty of test resources like test cases, also a prerequisite of automation, which may act as an incentive to contribute to the framework. This remains to be seen. Admittedly, cases will have to be maintained and updated, but the frequency was deemed to be low by Wärtsilä's experts.
+The manual work belongs to the preparatory step of the framework and is required at the early stages of testing. Here, a clearly defined framework which states what resources or contributions are needed can bring credibility and trust to the project and provide a channel for cooperation. The kicker to having this kind of documented process and automated framework is the reusabilty of test resources like test cases (also a prerequisite of automation), which may act as an incentive to contribute to the framework for the stakeholders. This remains to be seen, however. Admittedly, cases will have to be maintained and updated.
 
 % component testing replacing integration testing
+% todo headline
+
+\section{test}
+
+Integraton losing significance, capture and playback, 
+
+% todo citations?
 Software is abstracted and managed by splitting it to blocks. These blocks form a specific functional area that is a thematic whole and which can be assigned to responsible and which generally make the software easier to manage. In fact, integration might be thought to be not between systems but between software components, which respects interfaces more broadly. One may ask if integration testing scope will become too bloated in this vein of thought any transaction with two points constituting an "integration".
 
 % getting rid of the word integration literature
-It is possible that \emph{integration} is a misleading term. Sometimes testing is divided to unit, component, and system tests as opposed to the traditional unit, integration, system paradigm (todo reference). Supposedly, a component is a combination of simple units and system tests focus on testing when all necessary components have been integrated. Testing grows with development as the size of the software blocks grow (call the units or components or whatever). But the target of testing is entirely removed from the semantics of this division. Which type of functionalities should be tested and where should the testing focus be?
+It is possible that \emph{integration} is a misleading term. Sometimes testing is divided to unit, component, and system tests as opposed to the traditional unit, integration, system paradigm \citep{myers1976software, pezze2008software}. Supposedly, a component is a combination of simple units and system tests focus on testing when all necessary components have been integrated. Testing grows with development as the size of the software blocks grow (call the units or components or whatever). But the target of testing is entirely removed from the semantics of this division. Which type of functionalities should be tested and where should the testing focus be?
 
 % where's the beef? testing often and testing early. component based. integrations should have responsible people.
 % tired old big-bang as an alternative
 % future: fault-based testing
 
 % capture playback and model generalizability, future resarch
-Capture and playback was the target of criticism but many commercial and non-commercial tools are based on it and while theoretically it may not be the best option, it arguably satisfies most companies' testing requirements and needs, at least temporarily. It remains to be seen if public opinion shifts after more is known about the lifecycle of such a tool and the maintenance requirements of such a strategy. The alternative, model-driven testing, requires an initial investment that is greater, but it might pay off. Perhaps system modeling will become so easy, and the philosophy of separating content with structure so prevalent as to enable test case and test data creation based specifications.
+% citations?
+Capture and playback is a frequent target of criticism but many commercial and non-commercial testing tools are based on it and while theoretically it may not be the best option, it arguably satisfies most companies' testing requirements and needs, at least temporarily. It remains to be seen if public opinion shifts after more is known about the lifecycle of such a tool and the maintenance requirements of such a strategy. The alternative, model-driven testing, requires an initial investment that is greater, but it might pay off. Perhaps system modeling will become so easy, and the philosophy of separating content with structure so prevalent as to enable test case and test data creation based specifications.
 
 In practice, integration testing might be skipped entirely in favor of end-to-end system tests which are thought to cover testing integrations. Once again testing is squeezed. Therefore, another area begging attention is whether integration testing should be conducted through end-to-end testing and what are the potential upsides and downsides. More accurately, this is to ask if integration testing should simply test the integration between two systems or if a whole chain of trans-system communication should be packaged into a test case. An end-to-end test case will give more coverage per case, and perhaps a more realistic test scenario, but also include a larger testing scope. If something goes awry can the test engineer or developer easily see what's wrong? Duvall advocates including only one assertion per case, which is counterproductive relative to the scale of an end-to-end case. If only a portion of system communication is relevant, the rest goes to waste.
 
-Future research might also labour over collecting, combining, and comparing strategies for test case creation. As such, experiments and proof of concepts have been given for generating test data (todo reference), creating test case templates automatically (todo wsdl reference), and capture strategies (references). This work should be catalogued and analyzed.
+Future research might also labour over collecting, combining, and comparing strategies for test case creation. As such, experiments and proof of concepts have been given for generating test data \citep{linnenkugel1990test}, creating test case templates automatically \citep{bai2005WSDL}, and capture strategies \citep{meszaros2003agile}. This work should be catalogued and analyzed.
 
-Rehmann has done commendable work stepping back to examine integration testing through fresh eyes. Different practical alternatives for testing \emph{component integrations} are laid out and compared in their article 2007 article. A similar unbiased and novel approach should be applied to reappraising the tired old big-bang and integration strategy in general taking stock of the alternatives that exist.
+\citet{rehman2007testing} have done commendable work stepping back to examine integration testing through fresh eyes. Different practical alternatives for testing \emph{component integrations} are laid out and compared in their 2007 article. A similar unbiased and novel approach should be applied to reappraising the tired old big-bang and integration strategy in general taking stock of the alternatives that exist.
 
 More focused areas like fault-based testing also merit research. The framework might supplemented by a set guidelines for creating fault-based test cases, for instance. This means creating tests cases based on defects detected in the system.
 
+Finally, it is not possible to go through every code branch or to test every possible input sequence. As \citet{myers1976software} put it, testing is a problem in economics. Test cases must provide a maximum yield on investment, where yield is measured as the probability that the case uncovers a new defect. \citep{myers1976software} Implementing a testing framework is essentially a software development project with all associated risks and costs \citep{kaner1997pitfalls}. 
+
 % todo write about maintenance
-
 % todo rehman focusing on components but includes unit-integration-system
-
-% End-to-end tests might be enough to record. This needs to studied.
 
 \begin{comment}
 Future research:
@@ -1800,32 +1810,35 @@ end-to-end tests are adequate if they can point to problem code accurately
 
 \chapter{Conclusions}
 \label{chapter:conclusions}
-
-It is not possible to go through every code branch or to test every possible input sequence. As \citet{myers1976software} put it, testing is a problem in economics. Test cases must provide a maximum yield on investment, where yield is measured as the probability that the case uncovers a new defect. \citep{myers1976software} 
-
 % generalizable
-The thesis asserts that the devised framework presented in \ref{chapter:frameworkproposal} is generalizable and can benefit any party doing testing based on capture and replay. (Choosing the exact tools is a separate task and dependent on contextual factors of each individual case, however.) Testing as a process, is cemented in three steps, preparing necessary input and conditions, executing tests, and verifying results, perhaps with the addition of a clean-up step logging test results or creating test reports.
+The thesis asserts that the devised framework presented in \ref{chapter:frameworkproposal} is generalizable and can benefit any party doing testing based on capture and replay. Testing as a process, is cemented in three steps, preparing necessary input and conditions, executing tests, and verifying results, perhaps with the addition of a clean-up step logging test results or creating test reports.
 
-Looking at the research questions again:
+The framework construct satisfied the case company requirements while respecting testing practices and theory. The practical functioning of the framework was presented through a proof of concept prototype evaluated by company experts and compared to previous prototypes. While the framework is generalizable the implementation is context-specific, which must be kept in mind when conducting further evaluation of the automated testing framework at the target company.
+
+Looking at the research questions again: \\
 
 \begin{adjustwidth}{2.5em}{0pt}
 \textbf{1. What are the requirements for an automated integration testing framework?} \\
 \end{adjustwidth}
 
-Succinctly speaking the testing framework requirements include a test case and/or surrogate generator, a test engine, and an oracle verifying test results. The generation is based on capture replay or formal models both of which allow for computational execution and thereby automation. While test execution is automatic, the creation will likely remain a mostly manual task. To create and manage the cases or surrogates, the framework essentially calls for an environment in which to develop test resources. This environment is typically capable of executing tests as well. The test oracle incorporates service logic that examines test outputs and execution traces to determine success or failure. Often logic statements about success/failure, assertions, are embedded directly into the test cases. Finally, Requirements specific to Wärtsilä are listed in Section \ref{section:requirements} and further evaluated in Section \ref{section:todo}. 
+To put it succinctly, testing framework requirements include a test case generator, a test harness (that is to say necessary surrogate components and possibly a surrogate generator), a test engine, and an oracle verifying test results. The generation can be based on capture replay or formal models both of which allow for automation. While test execution is automatic, the creation will likely remain a mostly manual task. To create and manage the cases or surrogate components, the framework essentially calls for an environment in which to develop these test resources. The environment is typically capable of executing tests as well. The test oracle incorporates service logic that examines test outputs and execution traces to determine success or failure. Often logic statements about success or failure, assertions, are embedded directly into the test cases with possible extenral resources such as expected results stored in a database. 
+
+Requirements specific to Wärtsilä are listed in Section \ref{section:requirements} and further evaluated in Section \ref{subsection:requirementsvalidation}. \\
 
 \begin{adjustwidth}{2.5em}{0pt}
 \textbf{2. How should the testing framework be constructed and maintained?} \\
 \end{adjustwidth}
 
-The second research question is answered by the framework construct. The framework structure is dependent on the three core processes: generation, execution, verification, as well as the available and suitable tools. Special attention must be paid in adopting and aligning the framework for .
+The second research question is answered in part by the framework construct. The framework structure is dependent on the three core processes: generation, execution, verification, as well as the available or suitable tools. Special attention must be paid in adopting and aligning the framework inside the target organization.
 
-One of the essential findings of this thesis is that Continuous Integration bridges the gaps in integration testing theory when examining the entire software lifecycle. Authors like Myers and Burnstein as well as textbooks (todo reference) still continue to perpetuate the image that integration testing is mere a software component assembly task and simply a staging post in software development. This is unfair because integrations should be tested regularly when there is even the slightest change in systems composition or source code. CI connects integration testing with functional, non-functional, and regression testing while adhering the tester's adage "test early and often". CI relies on automation to enable continuous testing.
+Maintenance consists of the creation of new tests for new or changed integrations. As the rate of change in Wärtsilä integrations was deemed infrequent, the rationale for automation was high. The creation of test cases is the most labor-intensive maintentece task and Wärtsilä should support this both to increase the efficiency of the maintenance work and to make sure the framework is correctly configured. The guide documentation should also explain the test package structure and how the test cases should be stored so that the framework can find them.
+
+Text execution occurs through a graphical UI, or, or more often, automatically. The automation half of the framework (see \ref{fig:newframework}) is exempt from maintenance. Naturally, the use and configuration of the tool should be included in the framework guide.
+
+One of the essential findings of this thesis is that Continuous Integration bridges the gaps in integration testing theory when examining the entire software lifecycle. Authors like Myers and Fewster and Graham as well as textbooks \citep{burnstein2003practical} still continue to perpetuate the image that integration testing is mere a software component assembly task and simply a staging post in software development. This is unfair because integrations should be tested regularly when there is even the slightest change in systems composition or source code. CI connects integration testing with functional, non-functional, and regression testing while adhering to the tester's adage "test early and test often". CI also requires automation to enable the continuity of testing.
 % also automation
 
-The framework construct satisfied the case company requirements while respecting testing practices and theory. The practical functioning of the framework was presented through a proof of concept prototype evaluated by company experts and compared to previous work. While the framework is generalizable the implementation is context-specific, which must be kept in mind when conducting further evaluation of the automated testing framework at the target company.
-
-Good testing is based on good plans and ensured by good governance. Plans include specifications of systems and models of their behavior. Technology has even taken steps to facilitate making these plans actionable, for instance separating structure and content. Where the structure can be seen as a generalizable asset replicated in tests and content being test data. A good example of this is web services where a single specification file can be used to automatically generate an executable case. However, test data and verification (adding assertions and the like) must be done by a test engineer, still. It remains a task for human discretion to decide what is to be tested and what the testing objectives are.
+Good testing is based on good plans, such as specifications of systems and models of their behavior, and ensured by good governance. Though a virtue in the own right, technology has even made it possible for formatted plans to be translated into program logic directly, echoing the separation of structure and content. The structure is a generalizable asset replicated in tests and content is the test data. A good example of this is web services where a single specification file can be used to generate an executable test case. However, test data and verification (adding assertions and the like) must be done by a test engineer, still. It remains a task for human discretion to decide what is to be tested and what the testing objectives are.
 
 % Good planning is required and ensured by good governance and realized by a well-documented process model and carried out in practice by a technological framework. The strategy-operation alignment process goes through many gates and finding the right fit is not easy.
 
@@ -1854,16 +1867,15 @@ Interface error
 
 % ERRORS: wrong function, extra function, missing function 
 % Miscoded call error
-% Interface error (Lueng \& white)
+% Interface error (Lueng \& white) 
 % =================================================
 
 % Thin threads, groupin into a tree (tsai et al)
 % Test data difficult to select (linnenkugel mullburg)
 % add background informtion: general about regression/integration/software testing, ITIL processes at Wärtsilä
 % and possibly more...
-% Todo: add Harness as testing strategy
 
-% Load the bibliographic references
+% Load the bibliographic references 
 % ------------------------------------------------------------------
 % You can use several .bib files:
 % \bibliography{thesis_sources,ietf_sources}
